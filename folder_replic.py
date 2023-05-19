@@ -88,6 +88,11 @@ def main(argv):
             logging_debug_msg('Common dir list: ')
             [logging_debug_msg(x) for x in folders_common]
 
+        # Clear iteration results
+        files_for_deletion.clear()
+        files_for_copying.clear()
+        folders_common.clear()
+
     # Main flow
     # Parsing args
     path_src = sys.argv[1]
